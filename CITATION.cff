@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software release and the accompanying paper."
+title: "LZP Research Codec: Raw and Lag-Difference Domain Selection for LZ77"
+type: software
+authors:
+  - family-names: Leinecker
+    given-names: Richard
+  - family-names: Amoruso
+    given-names: Edward L.
+version: 0.1.0
+date-released: 2026-09-30
+license: CC0-1.0
+repository-code: "https://github.com/REPLACE-OWNER/REPLACE-REPOSITORY"
+abstract: >-
+  C99 research codec and experimental instrumentation for studying raw and
+  lag-difference domains in LZ77, including verification, ablation, and
+  whole-file delta-filter comparison modes.
+keywords:
+  - LZ77
+  - lossless compression
+  - delta coding
+  - lag differencing
+  - rANS
+  - reproducible research
