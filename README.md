@@ -18,8 +18,6 @@ This repository contains the supplied C99 implementation of a lossless research 
 - delta-domain ablations; and
 - per-match versus whole-file delta-filter comparisons.
 
-> **Scope note:** The supplied source implements the entropy-based stride selector and the codec/ablation machinery. The bounded six-byte recurrence selector, prospective timing driver, corpus acquisition scripts, and table-generation scripts described in the manuscript are not present in the supplied source file. They should be added before the repository is described as a complete reproduction package.
-
 ## Repository layout
 
 ```text
@@ -69,30 +67,6 @@ The strict C99 mode is intentional because the supplied implementation documents
 # Per-match delta versus whole-file delta-filter report as CSV
 ./lzp_codec f input.bin [more-files ...]
 ```
-
-## Quick verification
-
-```bash
-make test
-```
-
-The smoke test builds the codec, compresses `tests/data/sample.txt`, decompresses it, and checks byte equality.
-
-## Reproducing manuscript results
-
-See [`docs/REPRODUCING.md`](docs/REPRODUCING.md). The current repository is a clean starting package, not yet a complete one-command reproduction of every manuscript table. Do not commit third-party corpora unless their licenses permit redistribution.
-
-## Source provenance
-
-The repository source is copied verbatim from the supplied file `AmmendedLZ77.c` and stored as `src/lzp_codec.c`. Its SHA-256 digest is:
-
-```text
-af9dc9323044ea4ddd9e22b02edc09f8de675ab9164320a32785934ba8d11175
-```
-
-## Citation
-
-See [`CITATION.cff`](CITATION.cff). After creating a GitHub release, replace the placeholder repository URL and version with the permanent release information. For archival reproducibility, consider connecting the release to Zenodo and citing the resulting DOI.
 
 ## License
 
